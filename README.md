@@ -1,4 +1,4 @@
-# Aplicativo de login e registro de novo usuário 
+# Login e registro de novo usuário 
 
   O aplicativo consiste em uma tela de login com autenticação de email e senha com utilização de validacão JWT em backend. 
   Para acessar a rota de Home é necessário que o usuário esteja logado, caso contrário irá retornar para a página de login.
@@ -9,50 +9,49 @@
   Na tela de cadastro são validados se a estrutura de e-mail é válida assim como se a senha contem mais de 6 caracteres incluindo um número, bem como se a confirmação e a senha são iguais. Além disso, é possível ver a senha que está digitando clicando no ícone ao lado da mesma.
   
   ![bloggif_6095a0e80c28e](https://user-images.githubusercontent.com/66284603/117507954-2c4d9280-af5e-11eb-9841-922d3a3aac05.gif)
+  
+A aplicação é baseada em React e utiliza as seguintes bibliotecas:
 
-# Getting Started with Create React App
+- React Router Dom
+- Styled-components
+- Styled-icons
+- Axios
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto possui um back-end(pasta server) e um front-end(pasta front-end)
 
-## Available Scripts
+o servidor é baseado em json server e o frontend foi criado a partir do comando [Create React App](https://github.com/facebook/create-react-app)
 
-In the project directory, you can run:
+Quick Start
+certifique-se que a versão do node instalada é maior que a 12.0.0 a versão do yarn seja maior ou igual a 1.22.0
 
-### `yarn start`
+Servidor
+# Instalando json server
+utilize o comando abaixo para instalar o json server
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+` npm install -g json-server `
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Baixar dependencias
+Dentro da pasta server utilize o seguinte comando 
+` yarn `
 
-### `yarn test`
+## Iniciar o servidor
+Dentro da pasta server utilize o seguinte comando
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`yarn start `
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Executando o Frontend
+Os comandos abaixo devem ser executados dentro da pasta de Frontend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Baixar dependencias
+`yarn `
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Iniciar projeto
+ `yarn start`
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Para saber mais sobre a biblioteaca utilizado para o projeto Frontend 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Para ver a utilização do comando [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Para aprender mais sobre React, acesse: [React documentation](https://reactjs.org/).
